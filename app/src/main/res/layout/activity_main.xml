@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:background="#673AB7"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/personales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Escribe tu nombre"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/a_paterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ap Paterno"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/a_materno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ap Materno"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="#8BC34A"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/domicilio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Nombre de calle"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/municipio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Municipio"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Tu Estado"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:background="#673AB7"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/escolares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Numero de control"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/carrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Carrera"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/semestre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Semestre"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8BC34A"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/salir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="salir"
+                android:text="Salir" />
+
+            <Button
+                android:id="@+id/guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="enviar"
+                android:text="Guardar" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
